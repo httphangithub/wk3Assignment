@@ -1,0 +1,12 @@
+---
+title: "My plotly presentation"
+author: "HP"
+date: "July 02 2017"
+output: ioslides_presentation
+---
+
+## My first plotly slide
+
+```{r,message=FALSE, echo=FALSE}
+library(plotly)
+plot_ly(mtcars, x = mtcars$wt, y= mtcars$mpg, mode="marker", color = as.factor(mtcars$cyl))
